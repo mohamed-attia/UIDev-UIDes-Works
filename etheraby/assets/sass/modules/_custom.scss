@@ -1,0 +1,39 @@
+/*--- Select ---*/
+select {
+        height: 60px;
+        width: 100%;
+        border-radius: 8px;
+        border: 0;
+        padding-left: 25px;
+        font-size: 22px;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url("../images/arrow-down-sign-to-navigate.png") #fff no-repeat;
+        background-position: calc(100% - 20px);
+        outline: 0;
+}
+
+
+/*--- Button ---*/
+.btn {
+        border-radius: 8px;
+        color: #fff;
+        border:1px solid rgb(183, 183, 183);
+        outline: 0;
+}
+.btn-defualt{
+        background-color: rgb(227, 223, 223);
+        color:#333;
+        border:0
+}
+.btn-success {
+        background: $greenColor
+}
+.form-control:focus {
+        box-shadow: none;
+        border-color: #ccc;
+}
+.form-control {
+        box-shadow: none;
+}

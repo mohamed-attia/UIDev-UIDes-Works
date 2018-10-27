@@ -1,0 +1,40 @@
+.data-table {
+    & table {
+        width: 100%;
+        margin-top: 25px;
+        & col:nth-child(2n+2) {
+            background: #faf9f9
+        }
+        & thead {
+            & tr th {
+                font-weight: bold;
+                font-size: 16px
+            }
+        }
+        & tr {
+            & td {
+                position: relative;
+                & span.red {
+                    background: red;
+                    height: 13px;
+                    width: 13px;
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 25px;
+                    top: 11px
+                }
+                & span.green {
+                    background: $greenColor;
+                    height: 13px;
+                    width: 13px;
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 25px;
+                    top: 11px
+                }
+            }
+        }
+    }
+}

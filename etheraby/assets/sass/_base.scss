@@ -1,0 +1,20 @@
+/*----- Font ------*/
+@font-face {
+  font-family: 'Die';
+  src: url('../fonts/din font/DIN Bold.otf') format('otf'), 
+       url('../fonts/din font/DIN Light Regular.otf') format('otf'), 
+       url('../fonts/din font/din medium.otf') format('otf'), 
+       url('../fonts/din font/DIN Regular.ttf') format('ttf'), 
+       url('../fonts/din font/din-regular-webfont.woff') format('woff'), 
+       url('../fonts/din font/DIN Medium Regular.ttf') format('ttf')
+}
+/*--- end font -----*/
+body{
+    font-family: 'Die', Times, serif
+}
+h1,h2,h3,h4,h5,h6,span,p,a{
+    color:$textColor;
+}
+
+
+
