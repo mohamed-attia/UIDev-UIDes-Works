@@ -1,0 +1,22 @@
+.sec5{
+    background-color: $thirdcolor;
+    padding:$padding; 
+    min-width: 1200px;
+    .desc{
+        float: left;
+        width: 45%;
+        p{
+            margin-top: 50px;
+        }
+    }
+    .photo{
+        float:right;
+        padding-top: 40px;
+        width: 45%;
+        img{
+            display:block;
+            width: 100%;
+            
+        }
+    }
+}
