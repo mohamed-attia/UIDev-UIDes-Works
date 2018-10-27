@@ -1,0 +1,36 @@
+.clear:after
+{
+    visibility: hidden;
+	display: block;
+ 	content: " ";
+	clear: both;
+	height: 0;
+}
+@mixin  box-shadow ($x, $y, $b, $c)
+{
+    -webkit-box-shadow: $x $y $b $c;
+    -moz-box-shadow: $x $y $b $c;
+    -o-box-shadow: $x $y $b $c;
+    box-shadow: $x $y $b $c;
+}
+.contain
+{
+    width:1200px;
+    margin: 0 auto
+}
+.li-circle-after:after{
+    content:' ';
+    display:block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color:$second-color;
+    border: 1px solid $second-color;
+}
+.span-left-side{
+            display: block;
+            width: 5%;
+            height:7px;
+            background-color: $main-color;
+            margin-top: 35px;
+}
