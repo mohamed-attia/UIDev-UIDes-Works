@@ -1,0 +1,1828 @@
+/* start Global */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-family: avio;
+    font-weight: normal;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+@font-face {
+    font-family: avio;
+    src: url('../fonts/Arvo-Regular.ttf');
+}
+
+.clearfix {
+    clear: both
+}
+
+.container {
+    width: 1200px;
+    margin: auto
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.special-heading:after {
+    content: "";
+    display: block;
+    border: 1px solid #f4891d;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+.special-heading-2:after {
+    content: "";
+    display: block;
+    border: 1px solid #902513;
+    width: 30px;
+    position: absolute;
+    top: 18px;
+    left: 130px;
+    margin-top: 15px;
+}
+
+.special-heading-3:after {
+    content: " ";
+    display: block;
+    border: 1px solid #f4891d;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    margin: 7px 0;
+}
+
+/*============================End Global==========*/
+/*===============buttons==========================*/
+.order form button,
+.choose-meal button,
+.reservation .form form button,
+.lastnews .ietm-data button,
+.contactus .contact-item button,
+.serv-type .serv-item button,
+.popular button {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    background-color: #f38b1c;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.ietm .ietm-data button:hover,
+.reservation .form button:hover,
+.popular button:hover {
+    background-color: #d4cfcf
+}
+
+/*===============end buttons==========================*/
+/*============================Same Colors=========*/
+.choose-meal .item h3,
+.contactus .contact-item .twittes h3,
+.contactus .contact-item .twittes span,
+.contactus .contact-item .contact-img h3,
+.contactus .contact-item .contacts-data h3,
+.popular .popular-ietm h3,
+.popular .popular-ietm .popular-price {
+    color: #fd8f1e
+}
+
+/*==============end same colors============*/
+/*==============animation=================*/
+@-webkit-keyframes wobble-top {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
+}
+
+@keyframes wobble-top {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
+}
+
+.wobble-top {
+    display: inline-block;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.wobble-top:hover {
+    -webkit-animation-name: wobble-top;
+    animation-name: wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.buzz {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.buzz:hover {
+    -webkit-animation-name: buzz;
+    animation-name: buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/* Wobble Skew */
+@-webkit-keyframes wobble-skew {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
+}
+
+@keyframes wobble-skew {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
+}
+
+.wobble-skew {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.wobble-skew:hover,
+.wobble-skew:focus,
+.wobble-skew:active {
+    -webkit-animation-name: wobble-skew;
+    animation-name: wobble-skew;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.scale:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
+/*==========end animation===========*/
+/* =========Start first page ==================*/
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .links-1,
+.navbar .links-2 {
+    float: left;
+    width: 40%;
+    margin-top: 50px
+}
+
+.navbar .links-1 {
+    padding-left: 55px;
+}
+
+.navbar .links-1 li,
+.navbar .links-2 li {
+    display: inline-block;
+    color: #7e7e7e;
+    padding: 10px 0;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.navbar .links-1 li.active,
+.navbar .links-1 li:hover,
+.navbar .links-2 li:hover {
+    color: #000
+}
+
+.navbar .logo {
+    width: 20%;
+    float: left
+}
+
+.header {
+    height: 780px;
+    background: url('../images/header.jpg');
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    border-top: 1px solid #fab689;
+    text-align: center;
+    min-width: 1200px
+}
+
+.header .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+
+.header .slider {
+    position: relative;
+    margin-top: 160px;
+    z-index: 3
+}
+
+.header .slider img {
+    opacity: 0.5;
+    margin-bottom: 50px
+}
+
+.header .slider p {
+    line-height: 1.3;
+    color: rgba(212, 212, 212, 0.6);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.header .slider p.orange {
+    color: rgba(224, 140, 54, 0.6);
+}
+
+.header .slider ul {
+    margin-top: 220px;
+}
+
+.header .slider ul li {
+    list-style-type: circle;
+    background-color: #726e6b;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+.header .slider ul li:last-child {
+    background-color: #f38b1c;
+}
+
+.order {
+    height: 240px;
+    min-width: 1200px
+}
+
+.order p {
+    margin: 65px 0px;
+    font-size: 18px;
+    font-weight: normal
+}
+
+.order p span {
+    color: #902513;
+    text-decoration: underline
+}
+
+.order form input {
+    margin-right: 2%;
+    width: 23%;
+    height: 50px;
+    padding-left: 10px;
+    background-color: #f3f3f3;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    color: #676463;
+    font-size: 17px
+}
+
+.order form {
+    margin-top: 50px;
+    margin-bottom: 60px
+}
+
+.order form button {
+    width: 23%;
+    margin-left: 10px
+}
+
+.choose-meal {
+    height: 300px;
+    min-width: 1200px
+}
+
+hr {
+    border: 1px solid #d4d4d4
+}
+
+.choose-meal h2 {
+    position: relative;
+    float: left;
+    width: 80%;
+    margin-top: 0
+}
+
+.choose-meal button {
+    float: right;
+    width: 20%;
+}
+
+.choose-meal .item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 50px
+}
+
+.choose-meal .item h3 {
+    font-size: 15px;
+    margin-bottom: 40px
+}
+
+.choose-meal .item h4 {
+    color: #655556;
+    font-size: 13px;
+    margin-top: 40px
+}
+
+.choose-meal .item i {
+    color: #4d3e39;
+}
+
+.food {
+    width: 100%;
+    min-width: 1200px
+}
+
+.food .row1,
+.food .row2 {
+    text-align: center
+}
+
+.food .row1 img {
+    width: 36%;
+    float: left
+}
+
+.food .row1 img:nth-of-type(2) {
+    width: 20%;
+    float: left
+}
+
+.food .row1 .desc {
+    width: 18%;
+    float: left;
+    margin: 0 2%
+}
+
+.food .row1 .desc h2,
+.food .row2 .desc h2 {
+    color: #902513;
+    font-size: 17px;
+}
+
+.food .row1 .desc p,
+.food .row2 .desc p {
+    margin-top: 26px;
+    line-height: 1.9;
+    color: #e1d7d5;
+    margin-bottom: 0;
+}
+
+.food .row2 {
+    position: relative
+}
+
+.food .row2 .desc:first-of-type {
+    width: 25%;
+    float: left;
+    margin-top: -99px;
+    padding: 0
+}
+
+.food .row2 img.img-2 {
+    width: 33%;
+    float: left;
+    margin-top: -105px;
+    height: 300px;
+}
+
+.food .row2 .desc {
+    width: 20%;
+    float: left;
+    padding: 0 10px;
+}
+
+.food .row2 img.img-3 {
+    position: absolute;
+    height: 400px;
+    top: 187px;
+    right: 0px;
+    width: 22%;
+}
+
+.food .row2 .desc:last-child {
+    width: 13%;
+    float: right;
+    padding-right: 15px;
+}
+
+.sheef {
+    text-align: center;
+    margin-top: 50px;
+    min-width: 1200px
+}
+
+.sheef h2 {
+    color: #2a2a2a;
+    position: relative;
+}
+
+.sheef .sheef-data {
+    width: 23%;
+    float: left;
+    -webkit-box-shadow: 5px 5px 10px #444, -5px -5px 10px #444;
+    -moz-box-shadow: 5px 5px 10px #444, -5px -5px 10px #444;
+    -o-box-shadow: 5px 5px 10px #444, -5px -5px 10px #444;
+    box-shadow: 5px 5px 10px #444, -5px -5px 10px #444;
+    margin-right: 2%;
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer
+}
+
+.sheef .sheef-data:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.sheef .sheef-data .shef-img {
+    position: relative;
+    z-index: 1
+}
+
+.sheef .shef-img .shef-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(77, 67, 68, 0.4);
+    z-index: 2;
+    color: #fff;
+}
+
+.sheef .shef-img .shef-overlay h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #fff
+}
+
+.sheef .shef-img .shef-overlay:hover {
+    background-color: rgba(131, 61, 36, 0.8);
+    color: #fff
+}
+
+.sheef .shef-img .shef-overlay:hover h3 {
+    color: #fff
+}
+
+.sheef .shef-social {
+    margin-top: 30px
+}
+
+.sheef .shef-social img {
+    width: 30px;
+    height: 30px
+}
+
+.sheef .shef-social img:hover {
+    opacity: 0.4
+}
+
+.reservation {
+    height: 600px;
+    background: url(../images/5.jpg);
+    background-size: cover;
+    margin-top: 60px;
+    min-width: 1200px
+}
+
+.reservation .form {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    color: #fff
+}
+
+.reservation .form form {
+    width: 500px
+}
+
+.reservation .form form label {
+    font-size: 18px;
+    float: left;
+    margin-right: 0px;
+}
+
+.reservation .form form select.table {
+    width: 222px;
+    margin-top: 37px;
+    float: left;
+    margin-left: -39px;
+}
+
+.reservation .form form input,
+.reservation .form form select {
+    height: 50px;
+    border-radius: 7px;
+    border: 0;
+    padding: 0;
+    color: #cecece;
+    padding: 0 5px;
+    width: 500px;
+    margin: 20px 0
+}
+
+.reservation .form form button {
+    width: 117px;
+    margin-top: 10px;
+    margin-left: 380px;
+}
+
+.reservation .text {
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin-top: 200px
+}
+
+.reservation .text h2 {
+    color: #f3ece6;
+    font-size: 40px
+}
+
+.reservation .text h3 {
+    color: #f38b1c;
+    letter-spacing: 5px;
+    font-weight: normal
+}
+
+.reservation .text span {
+    background-color: rgba(89, 80, 75, 0.7);
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px
+}
+
+.guests {
+    height: 540px;
+    background-color: #e6e6e6;
+    min-width: 1200px;
+    padding-top: 40px;
+    text-align: center
+}
+
+.guests h2 {
+    margin-top: 0;
+    position: relative;
+}
+
+.guests .quot {
+    background-color: #fff;
+    width: 75%;
+    height: 350px;
+    margin-top: 40px;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+    float: left
+}
+
+.guests .quot q {
+    line-height: 2;
+    font-size: 19px;
+    color: #545454;
+    font-style: italic
+}
+
+.guests .quot span {
+    display: block;
+    background-color: #85341f;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.guests .quot span:hover {
+    opacity: 0.8
+}
+
+.guests .quot span.right {
+    position: absolute;
+    bottom: -10px;
+    right: -10px
+}
+
+.guests .quot span.left {
+    position: absolute;
+    bottom: -10px;
+    right: 50px
+}
+
+.guests .client {
+    width: 22%;
+    float: left;
+    background-color: #fff;
+    height: 200px;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 115px;
+}
+
+.guests .client:hover>img {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
+.guests .client img {
+    margin-top: 20px
+}
+
+.guests .client h2 {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #8b2b12;
+    text-transform: uppercase
+}
+
+.guests .client .star {
+    width: 100%;
+    margin-top: 20px
+}
+
+.guests .client i {
+    color: #ffcc13;
+    cursor: pointer
+}
+
+.guests .client i:hover {
+    opacity: 0.4;
+}
+
+.lastnews {
+    text-align: center
+}
+
+.lastnews h2 {
+    position: relative;
+}
+
+.lastnews .ietm {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.lastnews .ietm .ietm-img span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    position: absolute;
+    background-color: rgba(123, 42, 23, 0.6);
+    left: 30px;
+    bottom: 30px;
+    padding-top: 4px
+}
+
+.lastnews .ietm .ietm-img img {
+    float: left;
+    width: 50%;
+    z-index: 1
+}
+
+.lastnews .ietm-data {
+    float: left;
+    width: 48%;
+    text-align: left;
+    margin-left: 2%
+}
+
+.lastnews .ietm-data h3 {
+    font-size: 20px;
+    margin-top: 0;
+    color: #8b2b12;
+}
+
+.lastnews .ietm-data p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #cccbc7;
+}
+
+.lastnews .ietm-data button {
+    width: 117px;
+    float: right;
+    margin-right: 20px
+}
+
+.hours {
+    text-align: center;
+    background-color: #e6e6e6;
+    padding: 30px 0;
+    overflow: hidden;
+    min-width: 1200px
+}
+
+.hours h2 {
+    position: relative;
+}
+
+.hours .table {
+    background-color: #fff;
+    width: 48%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    margin-top: 110px;
+    padding-top: 30px;
+    margin-right: 2%;
+    text-align: center;
+    height: 200px
+}
+
+.hours .table span {
+    display: inline-block;
+    width: 33, 33333%;
+    margin: 15px 10px;
+    color: #843107
+}
+
+.hours .img {
+    width: 48%;
+    float: left;
+    position: relative;
+    padding-top: 20px
+}
+
+.hours .img img {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    z-index: 1
+}
+
+.hours .img span {
+    display: block;
+    background-color: #85341f;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hours .img span.right {
+    position: absolute;
+    bottom: -10px;
+    right: -10px
+}
+
+.hours .img span.left {
+    position: absolute;
+    bottom: -10px;
+    right: 60px
+}
+
+.pop-1 {
+    text-align: center;
+    min-width: 1200px
+}
+
+.pop-1 h2 {
+    position: relative;
+    margin-top: 50px;
+}
+
+.pop-1 .pop-img {
+    margin: 50px 10px
+}
+
+.pop-1 .pop-img img {
+    width: 22%;
+    margin-right: 2%;
+    margin-top: 30px
+}
+
+.contactus {
+    background-color: #4b3c39;
+    height: 500px;
+    min-width: 1200px
+}
+
+.contactus .contact-item {
+    width: 23%;
+    float: left;
+    margin-top: 60px;
+    margin-right: 2%
+}
+
+.contactus .contact-item .contact-desc {
+    margin-top: 40px
+}
+
+.contactus .contact-item .contact-desc h3 {
+    color: #fd8f1e;
+    font-size: 18px;
+}
+
+.contactus .contact-item p {
+    line-height: 1.9;
+    color: #ccc;
+}
+
+.contactus .contact-item .twittes {
+    margin-bottom: 50px
+}
+
+.contactus .contact-item .twittes h3 {
+    font-size: 19px;
+}
+
+.contactus .contact-item .twittes span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #403634;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    margin-right: 20px
+}
+
+.contactus .contact-item .twittes p {
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.contactus .contact-item .twittes h4 {
+    margin-top: 0px;
+    color: #ccc;
+    font-size: 12px;
+    margin-left: 60px
+}
+
+.contactus .contact-item .contact-img h3 {
+    font-size: 19px;
+}
+
+.contactus .contact-item .contact-img img {
+    margin: 10px 5px;
+    border-radius: 5px;
+    float: left
+}
+
+.contactus .contact-item .contacts-data span {
+    display: inline-block;
+    margin: 10px 5px
+}
+
+.contactus .contact-item .contacts-data span.label {
+    color: #fff;
+    float: left;
+    font-weight: bold
+}
+
+.contactus .contact-item .contacts-data span.data {
+    width: 60%;
+    line-height: 1.6;
+    font-size: 16px
+}
+
+.contactus .contact-item button {
+    width: 40%;
+    margin-right: 20px
+}
+
+.contactus .contact-item button:nth-of-type(2) {
+    background-color: #413736
+}
+
+.footer {
+    min-width: 1200px;
+    background-color: #413736;
+    overflow: hidden;
+    height: 100px;
+    line-height: 100px
+}
+
+.footer .social-icon {
+    width: 25%;
+    float: right;
+    padding-top: 20px;
+}
+
+.footer .social-icon img {
+    margin: 0 1%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer
+}
+
+.footer .social-icon img:hover {
+    opacity: 0.4
+}
+
+.footer .copy {
+    float: left;
+    width: 25%;
+    /* margin: 40px 0*/
+}
+
+.footer .copy h2 {
+    color: #fff;
+    font-size: 15px
+}
+
+/*=======================second Page====================*/
+.our-services {
+    background: url(../images/our-services.jpg);
+    background-size: cover;
+    height: 150px;
+    overflow: hidden;
+    min-width: 1200px
+}
+
+.our-services h2 {
+    color: #f5f1e8;
+    width: 40%;
+    float: left;
+    line-height: 100px;
+    font-size: 35px
+}
+
+.our-services h3 {
+    color: #f5f1e8;
+    width: 30%;
+    float: right;
+    line-height: 140px;
+    font-family: time;
+    font-size: 15px
+}
+
+.serv-type {
+    text-align: center;
+    min-width: 1200px
+}
+
+.serv-type .serv-item {
+    width: 23%;
+    float: left;
+    margin: 60px 1%
+}
+
+.serv-type .serv-item i {
+    color: #8e291d
+}
+
+.serv-type .serv-item h3 {
+    color: #8e291d;
+    margin: 20px 0;
+}
+
+.serv-type .serv-item p {
+    line-height: 1.5;
+    color: #ccc;
+    margin-bottom: 30px
+}
+
+.serv-type .serv-item button {
+    width: 35%;
+}
+
+/*=======================third Page====================*/
+.popular {
+    text-align: center;
+    background-color: #e6e6e6;
+    overflow: hidden;
+    padding-top: 30px;
+    min-width: 1200px
+}
+
+.popular h2 {
+    position: relative
+}
+
+.popular .popular-ietm {
+    width: 23%;
+    float: left;
+    background-color: #fff;
+    margin-left: 2%;
+    margin-top: 40px
+}
+
+.popular .popular-ietm .popular-data {
+    width: 70%;
+    float: left;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.popular .popular-ietm .popular-data h5 {
+    color: #9e9e9e;
+    font-size: 12px;
+}
+
+.popular .popular-ietm h3 {
+    position: relative
+}
+
+.popular .popular-ietm .popular-price {
+    width: 22%;
+    float: left;
+    font-size: 19px;
+    font-weight: bold
+}
+
+.popular button {
+    width: 23%;
+    margin: 40px 0
+}
+
+.heath-food h2 {
+    position: relative
+}
+
+.heath-food .health-ietm {
+    width: 16%;
+    height: 16%;
+    float: left;
+    margin: 20px;
+    line-height: 16%;
+    padding-top: 10px;
+    border-radius: 5px
+}
+
+.heath-food .health-ietm:hover {
+    background-color: #f48a1c;
+    border-radius: 5px
+}
+
+.heath-food .health-ietm:hover i,
+.heath-food .health-ietm:hover h3 {
+    color: #fff
+}
+
+.heath-food .health-ietm h3 {
+    color: #89311d;
+}
+
+.ingredients {
+    min-width: 1200px;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in
+}
+
+.ingredients .ingredients-img {
+    width: 33.33%;
+    float: left;
+    position: relative;
+    text-align: center;
+    height: 475px;
+}
+
+.ingredients .ingredients-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.ingredients .ingredients-img .ingredients-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 10% 0 10%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.ingredients .ingredients-img:hover>.ingredients-img-overlay {
+    display: block;
+}
+
+.ingredients .ingredients-img .ingredients-img-overlay h2 {
+    margin-top: 40px;
+    font-size: 25px;
+    color: #8a3809;
+    font-weight: bold
+}
+
+.ingredients .ingredients-img .ingredients-img-overlay i {
+    color: #8B2B11;
+}
+
+.ingredients .ingredients-img .ingredients-img-overlay p {
+    line-height: 1.5;
+    color: #000;
+    padding: 10px 0
+}
+
+.ingredients .ingredients-img .ingredients-img-overlay button {
+    width: 35%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    background-color: #8b2b12;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+.pop3 {
+    text-align: center;
+    min-width: 1200px;
+    background-color: #8b2b12
+}
+
+.pop3 .pop-img {
+    padding: 50px 10px;
+}
+
+.pop3 .pop-img img {
+    width: 22%;
+    margin-right: 2%;
+}
+
+.heath-food {
+    text-align: center;
+    overflow: hidden;
+    padding: 30px 0
+}
+
+/*=======================Media query====================*/
+@media (max-width:600px) {
+
+    /*start general*/
+    .special-heading:after {
+        content: "";
+        display: block;
+        border: 1px solid #f4891d;
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        left: 200px;
+        margin-top: 5px
+    }
+
+    .special-heading-2:after {
+        content: "";
+        display: block;
+        border: 2px solid #902513;
+        width: 30px;
+        position: absolute;
+        top: 18px;
+        left: 130px;
+        margin-top: 15px;
+    }
+
+    .special-heading-3:after {
+        left: 200px;
+        margin: 0;
+    }
+
+    .container {
+        width: 600px;
+        margin: auto
+    }
+
+    /*end general*/
+    .navbar {
+        min-width: 600px;
+        text-align: center;
+        margin: 0
+    }
+
+    .navbar .links-1,
+    .navbar .links-2 {
+        width: 600px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar .links-1 li,
+    .navbar .links-2 li {
+        width: 100%;
+        background-color: #444;
+        margin: 1px 0;
+        color: #fff
+    }
+
+    .navbar img {
+        display: none
+    }
+
+    .header {
+        min-width: 600px
+    }
+
+    .order {
+        height: 240px;
+        min-width: 600px;
+        text-align: center
+    }
+
+    .order p {
+        margin: 15px 0px;
+        font-size: 18px;
+        line-height: 1.9
+    }
+
+    .order form input {
+        width: 90%;
+        margin: 5px
+    }
+
+    .order form {
+        margin: 30px 0
+    }
+
+    .order form button {
+        width: 50%;
+        margin-top: 10px
+    }
+
+    .choose-meal {
+        height: auto;
+        min-width: 600px;
+        text-align: center;
+        margin-top: 150px
+    }
+
+    hr {
+        border: 1px solid #d4d4d4
+    }
+
+    .choose-meal h2 {
+        position: relative;
+        width: 100%;
+    }
+
+    .choose-meal button {
+        width: 51%;
+        margin-top: 10px;
+        float: none
+    }
+
+    .choose-meal .item {
+        float: left;
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 30px
+    }
+
+    /*end choose-meal*/
+    .food {
+        min-width: 600px
+    }
+
+    .food .row1 img {
+        width: 100%;
+        float: none;
+        height: 300px
+    }
+
+    .food .row1 img:nth-of-type(2) {
+        width: 100%;
+        float: none
+    }
+
+    .food .row1 .desc {
+        width: 100%;
+        float: none;
+        margin: 0
+    }
+
+    .food .row1 .desc p,
+    .food .row2 .desc p {
+        margin-bottom: 10px;
+    }
+
+    .food .row2 .desc:first-of-type {
+        width: 100%;
+        float: none;
+        margin-top: 9px;
+        padding: 0
+    }
+
+    .food .row2 img.img-2 {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+        height: 300px;
+    }
+
+    .food .row2 .desc {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .food .row2 .desc img {
+        width: 100%
+    }
+
+    .food .row2 img.img-3 {
+        display: none
+    }
+
+    .food .row2 .desc:last-child {
+        width: 100%;
+        float: none;
+    }
+
+    .sheef {
+        min-width: 600px
+    }
+
+    .sheef h2 {
+        padding-bottom: 10px
+    }
+
+    .sheef .sheef-data {
+        width: 90%;
+        float: none;
+        margin: 4%;
+    }
+
+    .reservation {
+        height: 700px;
+        margin-top: 60px;
+        min-width: 600px;
+        text-align: center;
+        padding-top: 10px;
+        overflow: hidden
+    }
+
+    .reservation .form {
+        width: 100%;
+        float: none;
+        margin-top: 30px;
+        color: #fff
+    }
+
+    .reservation .form form {
+        width: 50%;
+        margin: 0 7%;
+    }
+
+    .reservation .form form label {
+        font-size: 18px;
+        float: left;
+        margin-right: 0px;
+    }
+
+    .reservation .form form select.table {
+        width: 500px;
+        margin-top: 37px;
+        float: none;
+        margin-left: 0px;
+    }
+
+    .reservation .form form button {
+        width: 70%;
+        margin-top: 0;
+        margin-left: 150px;
+        height: 50px
+    }
+
+    .reservation .text {
+        display: none
+    }
+
+    .reservation .text h2 {
+        color: #f3ece6;
+        font-size: 40px
+    }
+
+    .guests {
+        height: auto;
+        min-width: 600px;
+        padding-bottom: 10px;
+    }
+
+    .guests h2 {
+        margin-top: 0;
+    }
+
+    .guests .quot {
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 0px;
+        float: none;
+        height: 250px
+    }
+
+    .guests .quot span.right {
+        right: 15px
+    }
+
+    .guests .quot span.left {
+        right: 70px
+    }
+
+    .guests .client {
+        width: 80%;
+        float: none;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 8%
+    }
+
+    .lastnews {
+        text-align: center;
+        min-width: 600px
+    }
+
+    .lastnews h2 {
+        position: relative;
+    }
+
+    .lastnews .ietm {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+
+    .hours {
+        text-align: center;
+        background-color: #e6e6e6;
+        padding: 0px;
+        overflow: hidden;
+        min-width: 600px
+    }
+
+    .hours h2 {
+        position: relative;
+    }
+
+    .hours .table {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+        padding-top: 10px;
+        height: 170px
+    }
+
+    .hours .img {
+        width: 100%;
+        float: left;
+        padding-top: 0px
+    }
+
+    .hours .img span.right {
+        right: 10px
+    }
+
+    .hours .img span.left {
+        right: 70px
+    }
+
+    .pop-1 {
+        min-width: 600px
+    }
+
+    .contactus {
+        height: auto;
+        min-width: 600px;
+        text-align: center;
+        padding: 10px 0
+    }
+
+    .contactus .contact-item {
+        width: 100%;
+        float: none;
+    }
+
+    .contactus .contact-item .twittes span {
+        float: none
+    }
+
+    .contactus .contact-item .twittes h4 {
+        margin-left: 0px
+    }
+
+    .contactus .contact-item .contact-img img {
+        margin: 10px 0px;
+        border-radius: 5px;
+        float: none;
+        width: 30%
+    }
+
+    .contactus .contact-item .contacts-data span.label {
+        width: 30%
+    }
+
+    .contactus .contact-item .contacts-data span.data {
+        width: 60%;
+    }
+
+    .footer {
+        min-width: 600px;
+        text-align: center
+    }
+
+    .footer .social-icon,
+    .footer .copy {
+        width: 100%;
+        float: none;
+    }
+
+    /*second Page*/
+    .our-services {
+
+        height: 150px;
+        min-width: 600px;
+        padding: 10px 0;
+        text-align: center
+    }
+
+    .our-services h2 {
+        color: #f5f1e8;
+        width: 100%;
+        float: none;
+        line-height: 0px;
+        font-size: 35px
+    }
+
+    .our-services h3 {
+        color: #f5f1e8;
+        width: 100%;
+        float: none;
+        line-height: 100px;
+    }
+
+    .serv-type {
+        min-width: 600px;
+        margin: 0 auto
+    }
+
+    .serv-type .serv-item {
+        width: 48%;
+        float: left;
+        margin: 40px 1%;
+        padding: 0
+    }
+
+    .serv-type .serv-item button {
+        width: 50%;
+    }
+
+    /*start rhird page*/
+
+    .popular {
+        min-width: 600px
+    }
+
+    .popular .popular-ietm {
+        width: 49%;
+        margin-left: 1%;
+    }
+
+    .popular button {
+        margin: 10px 0
+    }
+
+    .heath-food {
+        min-width: 600px
+    }
+
+    .heath-food .health-ietm {
+        width: 50%;
+        margin: 0px;
+    }
+
+    .ingredients {
+        min-width: 600px;
+        text-align: center
+    }
+
+    .ingredients .ingredients-img {
+        width: 100%;
+        position: relative;
+    }
+
+    .ingredients .ingredients-img .ingredients-img-overlay p {
+        line-height: 1.5;
+        margin-top: 50px;
+    }
+
+    .pop3 {
+        min-width: 600px;
+    }
+}
+
+/* end Media query*/
