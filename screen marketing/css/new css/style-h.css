@@ -1,0 +1,282 @@
+﻿/*my classes*/
+.no-padding-right{
+    padding-right:0
+}
+.no-padding{
+    padding:0
+}
+.nopadding-left{
+    padding-left:0
+}
+/*end my  classes*/
+@font-face {
+  font-family: 'Piximisa';
+  src: url('../fonts/Piximisa.ttf'); 
+}
+
+body {
+    background:url("../images/pdate-Screens-BG.png") !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fade-carousel {
+    position: relative;
+}
+.fade-carousel .carousel-indicators>li {
+    margin: 0 2px;
+    background-color: #dbdbdb;
+    opacity: .7;
+    border-radius: 15%;
+}
+.fade-carousel .carousel-indicators>li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    border-radius: 15%;
+    background: #f58220;
+}
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.ggg{
+    border-radius: 20px;
+    padding: 0 3px 3px 3px;
+}
+.hero {
+    padding: 0 10px;
+    position: absolute;
+    top: 248px;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+.hero h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0; 
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1 {
+    height: 497px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+    margin-top: -30px;
+}
+/********************************/
+/*          Media Queries       */
+/********************************/
+
+@media screen and (min-width: 980px) {
+    .hero {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 4em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: -4px;
+    }
+}
+.slider-title {
+    margin: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.carousel-inner > .item{
+    margin-top: -30px;
+}
+.slider-title h1 {
+    font-size: 84px;
+    font-weight: bold;
+    color: #25205D;
+    font-family: 'Piximisa';
+    letter-spacing: 4.5px;
+    padding-top: 57px;
+    text-transform: uppercase;
+}
+.right-section {
+    padding: 17px 17px 45px 17px;
+    height: 430px;
+    color: #25205D;
+    border: 1px solid #fff;
+}
+.right-section .news-head {
+    background-color: rgba(202, 205, 211, 0.7);
+    color: #25205D;
+    padding: 5px;
+    margin: 0;
+}
+.right-section .news-head .news-title{
+    max-height: 75px;
+    width: 100%;
+    overflow: hidden;
+}
+.right-section .news-head .news-title h4 {
+    display: inline-block;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 5px;
+        text-transform: uppercase;
+
+}
+.right-section .news-head .news-date {
+    padding-top: 20px;
+    text-align: right;
+    font-size: 1.2vw;
+    padding-right: 10px;
+}
+.right-section .news-content {
+    padding: 10px 0;
+    overflow: hidden;
+    height: 330px;
+}
+.right-section .news-content h4 {
+    font-weight: bold;
+    font-size: 24px;
+}
+.right-section .news-content p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #25205D;
+    white-space: pre-line
+}
+.left-section {
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+.left-section img {
+    width: 570px;
+    height: 430px;
+}
+.left-section .left-section-title {
+    position: absolute;
+    bottom: 16%;
+    padding: 10px 15px 10px 50px;
+    background: #000;
+    opacity: 0.8;
+    left: -4px;
+    max-width: 525px;
+}
+.left-section .left-section-title h3 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.left-section .left-section-title h4 {
+    font-weight: 800;
+    font-size: 26px;
+    color:#f38020;
+}
+.left-section .left-section-title span {
+     font-size: 22px;
+     font-weight: bold;
+     color: #fff;
+}
+.footer {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 0 26px 0 15px;
+}
+.footer .logo img {
+    width: 68%;
+    margin-top: 28px;
+}
+.footer .twitter {
+    background-color: rgba(202, 205, 211, 0.7);
+    padding: 5px;
+    margin-left: -67px;
+    margin-top: 20px;
+    height: 88px;
+    overflow: hidden;
+    width: 751px;
+}
+.footer .twitter .twitticon img{
+    margin-top: 25px;
+    margin-left: 5px;
+}
+.socailmedia{
+    border:1px solid #fff;
+    padding: 5px 0px 5px 0;
+    margin-top: -30px;
+    position: relative;
+    height: 88px;
+    width: 229px;
+    right: 24px;
+    margin-left: 59px;
+}
+.socailmedia .slider-content{
+    position: absolute;
+    top: 3px;
+}
+.socailmedia .social-icon span{
+    font-size: 13px;
+    font-weight: bold;
+    font-style:italic;
+}
+.socailmedia .social-icon img{
+    width: 35px;
+    height: 35px;
+}
+.socailmedia  .social-qr-corde img{
+    width: 220px;
+    margin-left: 19px;
+    height: 80px;
+}
+.scan-qr{
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-left:40px
+}
+.twitter-feeds{
+     font-weight: bold;
+    overflow: hidden;
+    margin-left: -7px;
+    position: relative;
+    height: 78px;  
+}
+.footer .twitter  p{
+   float:left;
+    width: 82%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: 0;
+    padding:0
+}
+.twitter-feeds .owl-item {
+	height:77px;
+}
+
+.footer .twitter .twitter-feeds img{
+   display: block;
+    float:left;
+    width: 16%;
+    height: 77px;
+    margin-top: 0px;
+    padding-top: -5px;
+    padding-left: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 6px;
+    }
