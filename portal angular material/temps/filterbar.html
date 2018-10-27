@@ -1,0 +1,26 @@
+<div layout="row" class="toolbar-filter" layout-padding>
+
+    <md-input-container flex>
+        <label>Department</label>
+        <md-select name="department" ng-model="department">
+            <md-option value="Banking">Banking</md-option>
+            <md-option value="Entrprise">Entrprise</md-option>
+
+        </md-select>
+    </md-input-container>
+
+    <md-input-container flex>
+        <label>Sort By</label>
+        <md-select name="sorting" ng-model="sorting">
+            <md-option value="Date">Date</md-option>
+            <md-option value="Name">Name</md-option>
+        </md-select>
+    </md-input-container>
+
+    <md-input-container flex>
+        <label>Write Project Name</label>
+        <input ng-model="user.email" type="text">
+        <md-icon><i class="material-icons">filter_list</i></md-icon>
+    </md-input-container>
+    
+</div>

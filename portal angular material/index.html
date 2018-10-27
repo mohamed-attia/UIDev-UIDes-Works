@@ -1,0 +1,42 @@
+<html lang="en" ng-app="itsPortal" ng-class="{'rtl':Language.isRtl()}" dir="{{(Language.isRtl())?'rtl':'ltr'}}">
+<!--<html lang="en" ng-app="itsPortal">-->
+
+<head>
+    <title>UX-UNIT PORTAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="assets/css/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="assets/less/style.css" />
+</head>
+
+<body ng-cloak>
+
+    <ui-view name="nav"></ui-view>
+    <ui-view name="sidemenu"></ui-view>
+    <ui-view name="filterlbar"></ui-view>
+    <ui-view></ui-view>
+    <div class="clear"></div>
+    <ui-view name="footer"></ui-view>
+
+    <!--lessjs libraries-->
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-ui-router.min.js"></script>
+
+    <!-- language -->
+    <script src="http://rawgit.com/PascalPrecht/bower-angular-translate/master/angular-translate.min.js"></script>
+    <script src="http://rawgit.com/PascalPrecht/bower-angular-translate-loader-static-files/master/angular-translate-loader-static-files.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="assets/js/angular-animate.min.js"></script>
+    <script src="assets/js/angular-aria.min.js"></script>
+    <script src="assets/js/angular-messages.min.js"></script>
+    <script src="assets/js/angular-material.min.js"></script>
+    <!--portal files-->
+
+    <script src="app/myapp.js"></script>
+
+</body>
+
+</html>

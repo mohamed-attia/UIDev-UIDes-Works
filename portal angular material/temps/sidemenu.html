@@ -1,0 +1,36 @@
+<div ng-cloak class="sidemenu" hide-gt-xs>
+
+    <md-sidenav layout="column" class="md-sidenav-left" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Portal Side Menu</h1>
+        </md-toolbar>
+
+        <div layout="column" class="sidemenu-item" layout-padding>
+
+            <div layout="row" layout-padding class="sidemenu-item-link" layout-align="start center">
+               <i class="material-icons">home</i>
+                <a ui-sref="app.home">Home</a>
+            </div>
+
+            <div layout="row" layout-padding class="sidemenu-item-link" layout-align="start center">
+                <i class="material-icons">important_devices</i>
+                <a ui-sref="app.research">Projects</a>
+            </div>
+
+            <div layout="row" layout-padding class="sidemenu-item-link" layout-align="start center">
+                <i class="material-icons">description</i>
+                <a ui-sref="app.research">Researches</a>
+            </div>
+
+        </div>
+
+
+        <!--
+        <md-button ng-click="toggleLeft()" class="md-accent">
+            Close this Sidenav
+        </md-button>
+-->
+
+    </md-sidenav>
+</div>

@@ -1,0 +1,145 @@
+/*
+*** Colors ***
+*/
+/*
+*** Global 
+*/
+body {
+  background: url(../img/download.jpg);
+  font-family: 'Roboto';
+  height: auto;
+}
+md-content {
+  background: none;
+}
+* {
+  text-transform: inherit;
+}
+/*
+*** My Style ***
+*/
+/*** NavBar ***/
+.nav-bar md-toolbar:not(.md-menu-toolbar) {
+  background: #eee;
+}
+.nav-bar md-nav-bar md-nav-ink-bar {
+  background: #f68d24;
+}
+.nav-bar .md-button.md-accent {
+  color: #283593;
+  font-size: 16px;
+}
+.nav-bar .md-nav-bar {
+  border-bottom: 0;
+  margin-top: 10px;
+}
+.nav-bar md-nav-bar.md-default-theme .md-button._md-nav-button.md-unselected,
+.nav-bar md-nav-bar .md-button._md-nav-button.md-unselected span {
+  color: #283593;
+  font-size: 16px;
+}
+/** Filter toolbar **/
+.toolbar-filter {
+  background: #283593;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.toolbar-filter md-input-container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.toolbar-filter md-input-container md-select,
+input[type="text"] {
+  border-bottom: 1px solid #eee;
+}
+.toolbar-filter .layout-padding > *,
+.toolbar-filter .layout-padding > .flex {
+  padding-bottom: 0;
+}
+.toolbar-filter .md-select-value .md-select-icon,
+.toolbar-filter md-input-container.md-input-has-value label:not(.md-no-float),
+.toolbar-filter md-input-container label,
+.toolbar-filter i,
+.toolbar-filter md-select-value span,
+.toolbar-filter input[type="text"] {
+  color: #fff;
+}
+/*** Home Style ***/
+md-card.homeCard > img {
+  height: 200px;
+}
+md-card.homeCard md-card-content,
+md-card.homeCard md-card-title {
+  padding: 10px;
+  color: #27235e;
+}
+md-card.homeCard md-card-actions {
+  margin: 0;
+  padding-right: 5px;
+}
+md-card.homeCard .md-button.md-default-theme.md-accent,
+md-card.homeCard .md-button.md-accent span {
+  font-size: 18px;
+}
+.fav-active i {
+  color: #ff5252;
+}
+.fav-notactive i {
+  color: #757575;
+}
+.home-items {
+  padding-bottom: 75px;
+}
+/** Footer **/
+md-toolbar.toolbar-footer {
+  background: #283593;
+  color: #fff;
+  text-align: center;
+  line-height: 3em;
+  height: 3em;
+  position: absolute;
+  bottom: 0;
+}
+/*
+*** Side Menu ***
+*/
+.sidemenu md-sidenav {
+  height: 300px;
+  width: 305px;
+  min-width: 300px;
+  max-width: 310px;
+}
+.sidemenu .sidemenu-item .sidemenu-item-link:hover {
+  background: #eee;
+}
+.sidemenu .sidemenu-item a {
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.sidemenu .sidemenu-item i {
+  color: #757575;
+}
+/*
+*** Media Query ***
+*/
+@media (min-width: 600px) and (max-width: 959px) {
+  .nav-bar .logo img {
+    width: 130px;
+  }
+}
+@media (min-width: 250px) and (max-width: 380px) {
+  .sidemenu md-sidenav {
+    width: 70%;
+    min-width: 30%;
+    max-width: 90%;
+  }
+}
+/*
+ *** language ***
+ */
+.language {
+  color: #27235e;
+}
+.language h6 {
+  margin: 5px;
+}
