@@ -1,32 +1,38 @@
 /*my classes*/
-.no-padding-right{
-    padding-right:0
+.no-padding-right {
+    padding-right: 0
 }
-.no-padding{
-    padding:0
+
+.no-padding {
+    padding: 0
 }
-.nopadding-left{
-    padding-left:0
+
+.nopadding-left {
+    padding-left: 0
 }
+
 /*end my  classes*/
 @font-face {
-  font-family: 'Piximisa';
-  src: url('../fonts/Piximisa.ttf'); 
+    font-family: 'Piximisa';
+    src: url('../fonts/Piximisa.ttf');
 }
 
 body {
-    background:url("../images/pdate-Screens-BG.png") !important;
+    background: url("../images/pdate-Screens-BG.png") !important;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .fade-carousel {
     position: relative;
 }
+
 .fade-carousel .carousel-indicators>li {
     margin: 0 2px;
     background-color: #dbdbdb;
     opacity: .7;
     border-radius: 15%;
 }
+
 .fade-carousel .carousel-indicators>li.active {
     width: 10px;
     height: 10px;
@@ -34,14 +40,16 @@ body {
     border-radius: 15%;
     background: #f58220;
 }
+
 /********************************/
 /*          Hero Headers        */
 /********************************/
-.ggg{
+.ggg {
     border-radius: 20px;
     padding: 0 3px 3px 3px;
     position: relative
 }
+
 .hero {
     padding: 0 10px;
     position: absolute;
@@ -55,11 +63,12 @@ body {
     -o-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
 }
+
 .hero h1 {
     font-size: 6em;
     font-weight: bold;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 /********************************/
@@ -71,9 +80,11 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
 .fade-carousel .slides .slide-1 {
     margin-top: -30px;
 }
+
 /********************************/
 /*          Media Queries       */
 /********************************/
@@ -83,34 +94,42 @@ body {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 640px) {
     .hero h1 {
         font-size: 4em;
     }
 }
+
 @media screen and (min-width: 768px) {
     .carousel-indicators {
         bottom: -4px;
     }
 }
+
 .slider-title {
     margin: 30px;
     text-align: center;
     margin-bottom: 0;
 }
-.carousel-inner > .item{
+
+.carousel-inner>.item {
     margin-top: -30px;
 }
-.carousel-inner{
+
+.carousel-inner {
     position: relative
 }
-.h-progress{
+
+.h-progress {
     position: absolute;
-    top:-2px;
-    left:13px;
-    height:5px;
-    background: linear-gradient(to right, red , yellow); /* Standard syntax */
- }
+    top: -2px;
+    left: 13px;
+    height: 5px;
+    background: linear-gradient(to right, red, yellow);
+    /* Standard syntax */
+}
+
 .slider-title h1 {
     font-size: 84px;
     font-weight: bold;
@@ -120,23 +139,27 @@ body {
     padding-top: 57px;
     text-transform: uppercase;
 }
+
 .right-section {
     padding: 17px 17px 45px 17px;
     height: 430px;
     color: #25205D;
     border: 1px solid #fff;
 }
+
 .right-section .news-head {
     background-color: rgba(202, 205, 211, 0.7);
     color: #25205D;
     padding: 5px;
     margin: 0;
 }
-.right-section .news-head .news-title{
+
+.right-section .news-head .news-title {
     max-height: 75px;
     width: 100%;
     overflow: hidden;
 }
+
 .right-section .news-head .news-title h4 {
     display: inline-block;
     font-size: 34px;
@@ -145,21 +168,25 @@ body {
     padding-left: 5px;
     text-transform: uppercase;
 }
+
 .right-section .news-head .news-date {
     padding-top: 20px;
     text-align: right;
     font-size: 1.2vw;
     padding-right: 10px;
 }
+
 .right-section .news-content {
     padding: 10px 0;
     overflow: hidden;
     height: 310px;
 }
+
 .right-section .news-content h4 {
     font-weight: bold;
     font-size: 24px;
 }
+
 .right-section .news-content p {
     font-size: 16px;
     text-align: justify;
@@ -167,15 +194,18 @@ body {
     color: #25205D;
     white-space: pre-line;
 }
+
 .left-section {
     height: 430px;
     position: relative;
     overflow: hidden;
 }
+
 .left-section img {
     width: 570px;
     height: 430px;
 }
+
 .left-section .left-section-title {
     position: absolute;
     bottom: 16%;
@@ -185,35 +215,42 @@ body {
     left: -4px;
     max-width: 525px;
 }
+
 .left-section .left-section-title h3 {
     font-weight: bold;
     font-size: 25px;
     margin-top: 3px;
     margin-bottom: 0;
 }
+
 .left-section .left-section-title h4 {
     font-weight: 800;
     font-size: 26px;
-    color:#f38020;
+    color: #f38020;
 }
+
 .left-section .left-section-title span {
-     font-size: 22px;
-     font-weight: bold;
-     color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
 }
-.item .poster > img{
+
+.item .poster>img {
     width: 1302px
 }
+
 .footer {
     margin-top: -15px;
     margin-bottom: 15px;
     overflow: hidden;
     padding: 0 26px 0 15px;
 }
+
 .footer .logo img {
     width: 68%;
     margin-top: 28px;
 }
+
 .footer .twitter {
     background-color: rgba(202, 205, 211, 0.7);
     padding: 5px;
@@ -223,21 +260,24 @@ body {
     overflow: hidden;
     width: 751px;
 }
-.footer .twitter  p {
+
+.footer .twitter p {
     font-size: 15px;
     color: #000;
     overflow: hidden;
     top: 50%;
     position: absolute;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     width: 559px;
 }
-.footer .twitter .twitticon img{
+
+.footer .twitter .twitticon img {
     margin-top: 24px;
     margin-left: 5px;
 }
-.socailmedia{
-    border:1px solid #fff;
+
+.socailmedia {
+    border: 1px solid #fff;
     padding: 5px 0px 5px 0;
     margin-top: -30px;
     position: relative;
@@ -246,44 +286,52 @@ body {
     right: 24px;
     margin-left: 59px;
 }
-.socailmedia .slider-content{
+
+.socailmedia .slider-content {
     position: absolute;
     top: 3px;
 }
-.socailmedia .social-icon span{
+
+.socailmedia .social-icon span {
     font-size: 13px;
     font-weight: bold;
-    font-style:italic;
+    font-style: italic;
 }
-.socailmedia .social-icon img{
+
+.socailmedia .social-icon img {
     width: 35px;
     height: 35px;
 }
-.socailmedia  .social-qr-corde img{
+
+.socailmedia .social-qr-corde img {
     width: 220px;
     margin-left: 19px;
     height: 80px;
 }
-.scan-qr{
+
+.scan-qr {
     margin-bottom: 30px;
     font-weight: bold
 }
-.twitter-feeds{
+
+.twitter-feeds {
     font-weight: bold;
     overflow: hidden;
     margin-left: -7px;
     position: relative;
     height: 77px;
 }
-.twitter-feeds p{
-    float:left;
+
+.twitter-feeds p {
+    float: left;
     width: 82%;
     position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     margin: 0
 }
-.twitter-feeds img{
+
+.twitter-feeds img {
     display: block;
     width: 16%;
     height: 77px;

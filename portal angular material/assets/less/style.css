@@ -6,7 +6,7 @@
 */
 body {
   background: url(../img/download.jpg);
-  font-family: 'Roboto';
+  font-family: "Roboto";
   height: auto;
 }
 md-content {
@@ -41,7 +41,8 @@ md-content {
 /** Filter toolbar **/
 .toolbar-filter {
   background: #283593;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 .toolbar-filter md-input-container {
   margin-bottom: 0;

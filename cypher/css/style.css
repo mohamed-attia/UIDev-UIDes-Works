@@ -1,5 +1,3 @@
-/* var */
-/* end var*/
 /*global*/
 .container {
   min-width: 1200px;
@@ -21,7 +19,6 @@ ul {
   padding: 0;
 }
 
-/*end header*/
 /*import*/
 .header {
   padding: 10px 0;
@@ -78,7 +75,7 @@ ul {
 
 .li-circle-after:after,
 .post ul li:after {
-  content: ' ';
+  content: " ";
   display: block;
   width: 20px;
   height: 20px;
@@ -133,7 +130,7 @@ ul {
 }
 
 .post h2:after {
-  content: ' ';
+  content: " ";
   display: block;
   width: 100px;
   height: 5px;
@@ -237,7 +234,7 @@ ul {
 }
 
 .article .left-sec h2:after {
-  content: ' ';
+  content: " ";
   display: block;
   width: 140px;
   height: 5px;
